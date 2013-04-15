@@ -1,0 +1,272 @@
+/* - BASE HTML TEMPLATE
+------------------------------------------------- 
+	Description: Min width 768px
+	Author:Shane Prendergast
+	Author URL:http://www.webknit.co.uk
+	Template URL:http://base.webknit.co.uk/
+/*
+
+
+/* - CONTENTS
+-------------------------------------------------
+	- GRID LAYOUTS ......................... 1.0.
+	- HOME PAGE ............................ 2.0.
+	- BLOG PAGE ............................ 3.0.
+	- ANIMATIONS ........................... 4.0.
+*/
+
+/*********************************************
+	- 1.0 -  GRID LAYOUTS
+*********************************************/
+
+	.one_four, .two_four, .three_four, .four_four,
+	.one_three, .two_three, .three_three,
+	.one_two, .two_two,
+	.two_third, .one_third {
+		float: left;
+		margin-bottom: 10px;
+		margin-left: 4%; 
+	}
+	.one_four, .two_four, .three_four, .four_four {
+		width: 22%; 
+	}
+	.one_four {
+		margin-left: 0%; 
+	}
+	.one_three, .two_three, .three_three {
+		width: 30.66667%; 
+	}
+	.one_three {
+		margin-left: 0; 
+	}
+	.one_two, .two_two {
+		width: 48%; 
+	}
+	.one_two {
+		margin-left: 0; 
+	}
+	.two_third {
+		margin-left: 0;
+		width: 65%; 
+	}
+	.one_third {
+		width: 31%; 
+	}
+	
+	
+
+/*********************************************
+	- 2.0 -  HOMEPAGE
+*********************************************/
+	
+	body {
+		font-size: 1.15em;
+	}
+	
+	header.main {
+		nav {
+			ul {
+				li {
+					margin: 0px 10px;
+				}
+			}
+		}
+	}
+	
+	.background,
+	.background.homepage,
+	.background-single {
+		height: 400px;
+	}
+	
+	.homepage {
+		.two-col {
+		   -moz-column-count: 2;
+	       -moz-column-gap: 30px;
+	       -webkit-column-count: 2;
+	       -webkit-column-gap: 30px;
+		}
+	}
+	.home-nav {
+		padding: 20px 0;
+	}
+	.sticky {
+		ul {
+			float: right;
+			padding-top: 20px;
+		}
+		.nav-logo {
+			display: inline-block;
+			float: left;
+			padding-bottom: 0px;
+		}
+	}
+	.photos {
+		ul {
+			li {
+				width: 25%;
+			}
+		}
+	}
+	.instapress-shortcode-image {
+		width: 25%;
+	}
+	
+	
+/*********************************************
+	- 3.0 -  BLOG PAGE
+*********************************************/
+
+	
+	header.main {
+		nav {
+			padding: 20px;
+			ul {
+				float: right;
+				padding-top: 20px;
+			}
+			.nav-logo {
+				display: inline-block;
+				float: left;
+				padding-bottom: 0px;
+			}
+		}
+	}
+	.blogpage {
+		.cats {
+			li {
+				background: none repeat scroll 0 0 transparent;
+				border: 3px solid rgba(0,0,0,1);
+				color: rgba(0,0,0,1);
+			    display: inline-block;
+			    font-family: "museo-sans";
+			    font-size: 0.68em;
+			    font-weight: 700;
+			    letter-spacing: 0.2em;
+			    margin:0px 10px 1.5em;
+			    padding: 8px 13px;
+			    text-align: center;
+			    text-transform: uppercase;			
+			    }
+		}
+		.social {
+			li {
+				width: 33%;
+			}
+		}
+	}
+	.featured-ads {
+		ul {
+			li {
+				width: 50%;
+			}
+		}
+	}
+	
+	.next-mobile,
+	.prev-mobile {
+		clear: none;
+		margin: 0px;
+		width: auto;
+	}
+	.next-mobile {
+		float: left;
+	}
+	.prev-mobile {
+		float: right;
+	}
+	
+	section.timeline {
+		.timeline-container {
+		    width: 600px;
+		}
+		.event{
+			padding: 30px;
+		}
+	}
+	
+	
+	
+	
+	
+/*********************************************
+	- 4.0 -  ANIMATIONS
+*********************************************/
+
+	
+	/* Animations */
+
+	.sticky ul,
+	.sticky ul li{
+	  opacity: 0;
+	  -webkit-animation: slidein .6s .5s 1 forwards ease-in-out;
+	     -moz-animation: slidein .6s .5s 1 forwards ease-in-out;
+	          animation: slidein .6s .5s 1 forwards ease-in-out;
+	}
+	.sticky ul {
+      -webkit-animation-delay: 0s;
+         -moz-animation-delay: 0s;
+              animation-delay: 0s;
+    }
+    .home-nav ul li.webknit,
+    nav.main ul li.webknit {
+	  	display: inline-block;
+	  }
+	  
+	 
+	  
+	
+	
+	
+	/* Keyframes */
+	
+	@-webkit-keyframes slidein{
+	  0%{
+	    opacity: 0;
+	  }
+	  100%{
+	    opacity: 1;
+	  }
+	}
+	@-moz-keyframes slidein{
+	  0%{
+	    opacity: 0;
+	  }
+	  100%{
+	    opacity: 1;
+	  }
+	}
+	@keyframes slidein{
+	  0%{
+	    opacity: 0;
+	  }
+	  100%{
+	    opacity: 1;
+	  }
+	}
+	
+	@-webkit-keyframes next{
+	  0%{
+	    -webkit-transform: scale(1);
+	  }
+	  100%{
+	    -webkit-transform: scale(1.05);
+	  }
+	}
+	@-moz-keyframes next{
+	  0%{
+	    -moz-transform: scale(1);
+	  }
+	  100%{
+	    -moz-transform: scale(1.05);
+	  }
+	}
+	@keyframes next{
+	  0%{
+	    transform: scale(1);
+	  }
+	  100%{
+	    transform: scale(1.05);
+	  }
+	}
+	

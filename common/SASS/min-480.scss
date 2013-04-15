@@ -1,0 +1,41 @@
+/* - BASE HTML TEMPLATE
+------------------------------------------------- 
+	Description: Min width 480px - wide mobile
+	Author:Shane Prendergast
+	Author URL:http://www.webknit.co.uk
+	Template URL:http://base.webknit.co.uk/
+/*
+
+
+/* - CONTENTS
+-------------------------------------------------
+	- GRID LAYOUTS ......................... 1.0.
+	- HOMEPAGE ............................. 2.0.
+*/
+
+/*********************************************
+	- 1.0 -  GRID LAYOUTS
+*********************************************/
+
+	.background,
+	.background.homepage,
+	.background-single {
+		height: 300px;
+	}
+
+
+/*********************************************
+	- 2.0 -  HOME PAGE
+*********************************************/
+
+	
+	.photos {
+		ul {
+			li {
+				width: 50%;
+			}
+		}
+	}
+	.instapress-shortcode-image {
+		width: 50%;
+	}

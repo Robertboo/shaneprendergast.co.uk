@@ -1,0 +1,29 @@
+/* - BASE HTML TEMPLATE
+------------------------------------------------- 
+	Description: High res
+	Author:Shane Prendergast
+	Author URL:http://www.webknit.co.uk
+	Template URL:http://base.webknit.co.uk/
+/*
+
+
+/* - CONTENTS
+-------------------------------------------------
+	- HI RES CSS ......................... 1.0.
+*/
+
+/*********************************************
+	- 1.0 -  HIGH RES CSS
+*********************************************/
+
+	/* EXAMPLE	
+  .logo {
+  	background: url(logo2x.jpg) no-repeat;
+  	background-size: 212px 303px;
+  }
+  */
+  
+  .home-logo {
+		background: url("common/graphics/logox2.jpg") repeat scroll 0 0 transparent;
+	    background-size: 300px 52px;
+	}

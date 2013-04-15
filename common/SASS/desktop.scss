@@ -1,0 +1,204 @@
+/* - BASE HTML TEMPLATE
+------------------------------------------------- 
+	Description: Min width 1170px
+	Author:Shane Prendergast
+	Author URL:http://www.webknit.co.uk
+	Template URL:http://base.webknit.co.uk/
+	Notes: Base SASS styles and Mobile first approach. I compile my LESS with Codekit. Consider mimifying your CSS for performance.
+/*
+
+
+/* - CONTENTS
+-------------------------------------------------
+	- GRID LAYOUTS ......................... 1.0.
+	- HOMEPAGE ............................. 2.0.
+	- SINGLE BLOG .......................... 3.0.
+	- ANIMATIONS ........................... 4.0.
+*/
+
+/*********************************************
+	- 1.0 -  GRID LAYOUTS
+*********************************************/
+
+
+	.container {
+		max-width:960px;
+		margin:0 auto;
+		width: 100%
+	}
+	.six-fifty {
+		width: 650px;
+	}
+	.one_four, .two_four, .three_four, .four_four,
+	.one_three, .two_three, .three_three,
+	.one_two, .two_two,
+	.two_third, .one_third {
+	    margin-bottom: 10px;
+	    margin-left: 20px;
+	}
+	.one_four, .two_four, .three_four, .four_four {
+	  	width: 225px; 
+	}
+	.one_four {
+	  	margin-left: 0px; 
+	}
+	.one_three, .two_three, .three_three {
+	  	width: 306px; 
+	}
+	.one_three {
+	  	margin-left: 0; 
+	}
+	.one_two, .two_two {
+	  	width: 470px; 
+	}
+	.one_two {
+	  	margin-left: 0; 
+	}
+	.two_third {
+	  	margin-left: 0;
+	  	width: 770px; 
+	}
+	.one_third {
+	  	width: 370px;
+	}
+
+
+/*********************************************
+	- 2.0 -  HOMEPAGE
+*********************************************/
+
+	.background,
+	.background.homepage,
+	.background-single {
+		height: 500px;
+	}
+	
+	
+/*********************************************
+	- 3.0 -  SINGLE BLOG PAGE
+*********************************************/
+	
+	.next,
+	.prev {
+		display: block;
+	}
+	.next > a,
+	.prev > a {
+	    background: none repeat scroll 0 0 rgba(0,0,0,1);
+	    background: none repeat scroll 0 0 black;
+	    border: medium none;
+	    color: white;
+	    display: block;
+	    font-family: "museo-sans";
+	    font-size: 0.68em;
+	    font-weight: 700;
+	    letter-spacing: 0.2em;
+	    margin-bottom: 1.5em;
+	    margin-top: -25px;
+	    opacity: 0.2;
+	    padding: 8px 13px;
+	    position: fixed;
+	    text-transform: uppercase;
+	    top: 25%;
+	    white-space: nowrap;
+	    z-index: 3;
+		-webkit-animation: next 1s ease-out;
+    	-webkit-animation-iteration-count: 3;
+    	-moz-animation: next 1s ease-out;
+    	-moz-animation-iteration-count: 3;
+    	a {
+    		color: rgba(255,255,255,1);
+    		&:hover {
+    			border: none;
+    			text-decoration: underline;
+    		}
+    	}
+		&:hover {
+			opacity: 1;
+			p {
+				display: inline;
+			}
+		}	
+	}
+	.next > a {
+	    float: right;
+	    right: 0;
+	}
+	.prev > a {
+	    float: left;
+	    left: 0;
+	}
+	/*
+	.next,
+	.prev {
+		cursor: pointer;
+		display: block;
+		height: 50px;
+		margin-top: -25px;
+		opacity: 0.2;
+		position: fixed;
+		top: 25%;
+		width: 50px;
+		z-index: 3;
+		-webkit-animation: next 1s ease-out;
+    	-webkit-animation-iteration-count: 3;
+    	-moz-animation: next 1s ease-out;
+    	-moz-animation-iteration-count: 3;
+    	a {
+    		color: rgba(255,255,255,1);
+    		&:hover {
+    			border: none;
+    			text-decoration: underline;
+    		}
+    	}
+		&:hover {
+			opacity: 1;
+			p {
+				display: inline;
+			}
+		}	
+	}
+	*/
+	.next {
+	    right: 10px;
+	}
+	.prev {
+	    left: 10px;
+	}
+	.prev-next-mobile {
+		display: none;
+	}
+	
+
+
+/*********************************************
+	- 4.0 -  ANIMATIONS
+*********************************************/
+
+
+
+	@-webkit-keyframes next{
+	  0%{
+	    -webkit-transform: scale(1);
+	  }
+	  100%{
+	    -webkit-transform: scale(1.05);
+	  }
+	}
+	@-moz-keyframes next{
+	  0%{
+	    -moz-transform: scale(1);
+	  }
+	  100%{
+	    -moz-transform: scale(1.05);
+	  }
+	}
+	@keyframes next{
+	  0%{
+	    transform: scale(1);
+	  }
+	  100%{
+	    transform: scale(1.05);
+	  }
+	}
+	
